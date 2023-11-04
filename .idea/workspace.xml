@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14e76279-e4e6-4b97-81a4-d2f9bcca3cc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/model/ProductModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-development.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="14e76279-e4e6-4b97-81a4-d2f9bcca3cc3" name="Changes" comment="Storage System">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/dto/LocationConsultModelDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/dto/LocationConsultModelDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/dto/LocationNameDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/dto/LocationNameDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/dto/ProductSkuDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/dto/ProductSkuDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/model/LocationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/model/LocationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/repository/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/repository/LocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/service/serviceInterfaceImpl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/storagesystem/service/serviceInterfaceImpl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/storagesystem/repository/LocationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/storagesystem/repository/LocationRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,7 +47,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/vitor/IdeaProjects/PeopleManager",
+    "last_opened_file_path": "C:/Users/vitor/IdeaProjects/Sales",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -60,8 +60,14 @@
       <recent name="C:\Users\vitor\IdeaProjects\Storage System\target\classes" />
       <recent name="C:\Users\vitor\IdeaProjects\Storage System\target\classes\org" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.storagesystem.repository" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StorageSystem">
     <configuration name="StorageSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.storagesystem.StorageSystem" />
       <module name="StorageSystem" />
@@ -75,9 +81,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LocationRepositoryTest.findByPositionName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StorageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.storagesystem.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.storagesystem.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.example.storagesystem.repository.LocationRepositoryTest" />
+      <option name="METHOD_NAME" value="findByPositionName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationRepositoryTest.testFindByPositionName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StorageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.storagesystem.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.storagesystem.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.example.storagesystem.repository.LocationRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindByPositionName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationRepositoryTest.testFindByPositionNameNonExisting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StorageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.storagesystem.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.storagesystem.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.example.storagesystem.repository.LocationRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindByPositionNameNonExisting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.StorageSystem" />
+        <item itemvalue="JUnit.LocationRepositoryTest.testFindByPositionName" />
+        <item itemvalue="JUnit.LocationRepositoryTest.testFindByPositionNameNonExisting" />
+        <item itemvalue="JUnit.LocationRepositoryTest.findByPositionName" />
       </list>
     </recent_temporary>
   </component>
@@ -90,6 +147,36 @@
       <option name="presentableId" value="Default" />
       <updated>1697460413709</updated>
     </task>
+    <task id="LOCAL-00001" summary="Storage System">
+      <option name="closed" value="true" />
+      <created>1698586221614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698586221614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Storage System" />
+    <option name="LAST_COMMIT_MESSAGE" value="Storage System" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((JdkDynamicAopProxy)this.h).advised" custom="org.springframework.aop.framework.JdkDynamicAopProxy,java.lang.reflect.Proxy" />
+        <watch expression="((JdkDynamicAopProxy)this.h).advised" custom="org.springframework.aop.framework.JdkDynamicAopProxy,java.lang.reflect.Proxy" />
+        <watch expression="this" />
+        <watch expression="((ProductService)this).productRepository" custom="org.example.storagesystem.service.ProductService" />
+        <watch expression="((ProductService)this).locationRepository" custom="org.example.storagesystem.service.ProductService" />
+        <watch expression="locationNameDto" language="JAVA" />
+        <watch expression="locationNameDto.position" language="JAVA" />
+        <watch expression="locationRepository" language="JAVA" />
+        <watch expression="this.h" custom="java.lang.reflect.Proxy" />
+        <watch expression="locationRepository" language="JAVA" />
+        <watch expression="productSku.quantity" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

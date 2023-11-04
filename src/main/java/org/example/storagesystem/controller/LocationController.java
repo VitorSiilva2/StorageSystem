@@ -2,7 +2,6 @@ package org.example.storagesystem.controller;
 
 import org.example.storagesystem.dto.LocationConsultModelDto;
 import org.example.storagesystem.dto.ProductConsultPositionDto;
-import org.example.storagesystem.dto.ProductModelDto;
 import org.example.storagesystem.model.LocationModel;
 import org.example.storagesystem.model.ProductModel;
 import org.example.storagesystem.service.LocationService;
@@ -23,7 +22,7 @@ public class LocationController {
     private LocationService locationService;
 
     @PostMapping
-    public LocationModel locationModel (@RequestBody LocationModel locationModel) {
+    public LocationModel locationModel(@RequestBody LocationModel locationModel) {
         LocationModel newPosition = locationService.createPosition(locationModel);
         return newPosition;
     }
@@ -39,7 +38,7 @@ public class LocationController {
                 .build());
     }
 
-    private Set<ProductConsultPositionDto> converterProductDto (Set<ProductModel> productModel) {
+    private Set<ProductConsultPositionDto> converterProductDto(Set<ProductModel> productModel) {
         return productModel.stream()
                 .map(productModelConverter -> ProductConsultPositionDto.builder()
                         .title(productModelConverter.getTitle())
@@ -49,7 +48,16 @@ public class LocationController {
                 .collect(Collectors.toSet());
     }
 
+    @GetMapping(value = "/consult/test/{position}")
+    public Optional<LocationConsultModelDto> locationModelConsult(@PathVariable String position) {
+        LocationModel locationModel = locationService.findByPositionName(position)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Location not found."));
 
+        return Optional.ofNullable(LocationConsultModelDto.builder()
+                .position(locationModel.getPosition())
+                .product(converterProductDto(locationModel.getProduct()))
+                .build());
+    }
 
 
 }

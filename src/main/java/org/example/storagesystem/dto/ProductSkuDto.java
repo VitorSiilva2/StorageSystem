@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ProductSkuDto {
 
-
     private String productSKU;
 
 }

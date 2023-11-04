@@ -4,12 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class LocationNameDto extends TransferLocationDto {
+@Builder
+public class TransferLocationDto {
 
-    private String position;
-
+        private ProductSkuDto sku;
+        private LocationNameDto locationFrom;
+        private LocationNameDto locationTo;
 }

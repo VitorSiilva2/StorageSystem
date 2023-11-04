@@ -4,12 +4,14 @@ import jakarta.validation.constraints.NotEmpty;
 import org.example.storagesystem.dto.LocationNameDto;
 import org.example.storagesystem.dto.ProductModelDto;
 import org.example.storagesystem.dto.ProductSkuDto;
+import org.example.storagesystem.dto.TransferLocationDto;
 import org.example.storagesystem.model.LocationModel;
 import org.example.storagesystem.model.ProductModel;
 import org.example.storagesystem.service.LocationService;
 import org.example.storagesystem.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -47,7 +49,7 @@ public class ProductController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/transfer")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public void transferProduct(@RequestBody ProductSkuDto productSkuDto, LocationNameDto locationNameDto) {
-        productService.transferProduct(productSkuDto, locationNameDto);
+    public void transferProduct(@RequestBody TransferLocationDto transferLocationDto) {
+        productService.transferProduct(transferLocationDto);
     }
 }

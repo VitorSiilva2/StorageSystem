@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface LocationRepository extends JpaRepository<LocationModel, Integer> {
 
 
-    @Query(value = "SELECT * FROM location l WHERE l.position LIKE CONCAT('%', ? , '%')", nativeQuery = true)
+    @Query(value = "SELECT * FROM location WHERE position = :position", nativeQuery = true)
     Optional<LocationModel> findByPositionName(@Param("position") String position);
 
     //@Query("SELECT l FROM LocationModel l WHERE l.position = :position")

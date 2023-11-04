@@ -26,7 +26,6 @@ public class LocationModel {
     private Integer id;
 
     @Column(name = "position")
-    @NotEmpty
     private String position;
 
     @Column(name = "capacity")
